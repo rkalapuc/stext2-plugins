@@ -8,6 +8,7 @@ class MoveToGroupByName(sublime_plugin.WindowCommand):
     for view in views:
       if view.name() == vname:
         targetView = view
+        break
 
     if targetView is  None:
       print 'View [' + vname+ '] not found!'
